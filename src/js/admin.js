@@ -1,2 +1,1 @@
-//CSS
-import '../css/admin.scss';
+//Silence is golden

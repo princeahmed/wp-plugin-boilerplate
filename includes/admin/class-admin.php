@@ -11,9 +11,9 @@ class WP_Plugin_Boilerplate_Admin {
 
 	function enqueue( $hook ) {
 
-		wp_enqueue_style( 'wp-plugin-boilerplate-admin', WP_PLUGIN_BOILERPLATE_ASSETS . '/css/admin.min.css', false, WP_RADIO_VERSION );
+		wp_enqueue_style( 'wp-plugin-boilerplate-admin', WP_RADIO_ASSETS_URL . '/css/admin.min.css', false, WP_RADIO_VERSION );
 
-		wp_enqueue_script( 'wp-plugin-boilerplate-admin', WP_PLUGIN_BOILERPLATE_ASSETS . '/js/admin.min.js', [ 'jquery', 'wp-util' ], WP_RADIO_VERSION, true );
+		wp_enqueue_script( 'wp-plugin-boilerplate-admin', WP_RADIO_ASSETS_URL . '/js/admin.min.js', [ 'jquery', 'wp-util' ], WP_RADIO_VERSION, true );
 
 		$localize_array = [
 			'nonce' => '',

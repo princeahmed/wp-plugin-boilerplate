@@ -23,9 +23,9 @@ final class WP_Plugin_Boilerplate {
 
 	public $version = '1.0.0';
 
-	private $min_php = '5.6.0';
+	public $min_php = '5.6.0';
 
-	private $name = 'WP Plugin Boilerplate';
+	public $name = 'WP Plugin Boilerplate';
 
 	protected static $instance = null;
 
@@ -90,7 +90,6 @@ final class WP_Plugin_Boilerplate {
 		include_once WP_PLUGIN_BOILERPLATE_INCLUDES . '/class-shortcodes.php';
 		include_once WP_PLUGIN_BOILERPLATE_INCLUDES . '/class-enqueue.php';
 		include_once WP_PLUGIN_BOILERPLATE_INCLUDES . '/class-ajax.php';
-		include_once WP_PLUGIN_BOILERPLATE_INCLUDES . '/class-hooks.php';
 		include_once WP_PLUGIN_BOILERPLATE_INCLUDES . '/functions.php';
 		include_once WP_PLUGIN_BOILERPLATE_INCLUDES . '/prince-settings/prince-loader.php';
 
