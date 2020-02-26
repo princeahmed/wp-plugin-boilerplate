@@ -1,0 +1,986 @@
+# Copyright (C) 2020 wp-plugin-boilerplate
+# This file is distributed under the same license as the wp-plugin-boilerplate package.
+msgid ""
+msgstr ""
+"Project-Id-Version: wp-plugin-boilerplate\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: includes/admin/class-metabox.php:13, includes/admin/class-metabox.php:37, includes/class-cpt.php:23, includes/class-cpt.php:23
+msgid "WP Plugin Boilerplate"
+msgstr ""
+
+#: includes/admin/class-metabox.php:25
+msgid "Popup Settings"
+msgstr ""
+
+#: includes/admin/class-metabox.php:32
+msgid "WP Plugin Boilerplate Tab"
+msgstr ""
+
+#: includes/admin/class-metabox.php:38
+msgid "Awesome Framework for developing WordPress Plugin."
+msgstr ""
+
+#: includes/class-cpt.php:23
+msgid "WP Plugin Boilerplates"
+msgstr ""
+
+#: includes/class-cpt.php:41, includes/class-cpt.php:41
+msgid "Categories"
+msgstr ""
+
+#: includes/class-cpt.php:41
+msgid "Category"
+msgstr ""
+
+#: includes/class-cpt.php:50, includes/class-cpt.php:50
+msgid "Tags"
+msgstr ""
+
+#: includes/class-cpt.php:50
+msgid "Tag"
+msgstr ""
+
+#: includes/class-cpt.php:71, includes/class-cpt.php:103
+msgid "All %s"
+msgstr ""
+
+#: includes/class-cpt.php:73, includes/class-cpt.php:74, includes/class-cpt.php:108
+msgid "Add New %s"
+msgstr ""
+
+#: includes/class-cpt.php:75, includes/class-cpt.php:106
+msgid "Edit %s"
+msgstr ""
+
+#: includes/class-cpt.php:76
+msgid "New %s"
+msgstr ""
+
+#: includes/class-cpt.php:77
+msgid "View %s"
+msgstr ""
+
+#: includes/class-cpt.php:78
+msgid "Search %s"
+msgstr ""
+
+#: includes/class-cpt.php:79
+msgid "No %s found"
+msgstr ""
+
+#: includes/class-cpt.php:80
+msgid "No %s found in Trash"
+msgstr ""
+
+#: includes/class-cpt.php:81, includes/class-cpt.php:105
+msgid "Parent %s:"
+msgstr ""
+
+#: includes/class-cpt.php:100
+msgctxt "taxonomy general name"
+msgid "%s"
+msgstr ""
+
+#: includes/class-cpt.php:101
+msgctxt "taxonomy singular name"
+msgid "%s"
+msgstr ""
+
+#: includes/class-cpt.php:102
+msgid "Search %"
+msgstr ""
+
+#: includes/class-cpt.php:104
+msgid "Parent %s"
+msgstr ""
+
+#: includes/class-cpt.php:107
+msgid "Update %s"
+msgstr ""
+
+#: includes/class-cpt.php:109
+msgid "New % Name"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:51, includes/prince-settings/includes/admin-functions.php:52, includes/prince-settings/includes/admin-functions.php:111, includes/prince-settings/includes/admin-functions.php:112, includes/prince-settings/includes/admin-functions.php:154, includes/prince-settings/includes/admin-functions.php:160, includes/prince-settings/includes/admin-functions.php:178, includes/prince-settings/includes/admin-functions.php:184, includes/prince-settings/includes/frontend-functions.php:391, wp-plugin-boilerplate.php:121
+msgid "Settings"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:57, includes/prince-settings/includes/admin-functions.php:117, includes/prince-settings/includes/admin-functions.php:211, includes/prince-settings/includes/admin-functions.php:1518
+msgid "Settings updated."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:58, includes/prince-settings/includes/admin-functions.php:118, includes/prince-settings/includes/admin-functions.php:212
+msgid "Settings reset."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:59
+msgid "Save Changes"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:100, includes/prince-settings/includes/admin-functions.php:101
+msgid "Prince"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:119, includes/prince-settings/includes/admin-functions.php:213
+msgid "Save Settings"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:124
+msgid "Settings UI"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:128
+msgid "Import"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:132
+msgid "Export"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:136, includes/prince-settings/includes/admin-functions.php:166, includes/prince-settings/includes/admin-functions.php:190
+msgid "Layouts"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:142
+msgid "Settings UI Builder"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:148
+msgid "Settings XML"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:172
+msgid "Settings PHP File"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:196
+msgid "Layout Management"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:205, includes/prince-settings/includes/admin-functions.php:206
+msgid "Documentation"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:218
+msgid "Creating Options"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:222
+msgid "Option Types"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:226
+msgid "Function References"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:230, includes/prince-settings/includes/admin-functions.php:272
+msgid "Theme Mode"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:234, includes/prince-settings/includes/admin-functions.php:278
+msgid "Meta Boxes"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:238
+msgid "Code Examples"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:242
+msgid "Layouts Overview"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:248
+msgid "Overview of available Theme Option fields."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:254
+msgid "Option types in alphabetical order & hooks to filter them."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:260
+msgid "Function Reference:prince_get_option()"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:266
+msgid "Function Reference:get_prince()"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:284
+msgid "Code examples for front-end development."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:290
+msgid "What's a layout anyhow?"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:404, includes/prince-settings/includes/admin-functions.php:506, includes/prince-settings/includes/admin-functions.php:575
+msgid "The %s input field for %s only allows numeric values."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:465
+msgid "The %s Colorpicker only allows valid hexadecimal or rgba values."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:750, includes/prince-settings/prince-loader.php:347
+msgid "Done"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:751, includes/prince-settings/includes/settings-types.php:261, includes/prince-settings/includes/settings-types.php:3386
+msgid "Remove Media"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:752
+msgid "Are you sure you want to reset back to the defaults?"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:753
+msgid "You can't remove this! But you can edit the values."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:754
+msgid "Are you sure you want to remove this?"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:755
+msgid "Are you sure you want to activate this layout?"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:756
+msgid "Sorry, you can't have settings three levels deep."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:757, includes/prince-settings/includes/settings-types.php:1192
+msgid "Delete Gallery"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:758, includes/prince-settings/includes/settings-types.php:1193
+msgid "Edit Gallery"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:759, includes/prince-settings/includes/settings-types.php:1200
+msgid "Create Gallery"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:760
+msgid "Are you sure you want to delete this Gallery?"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:761
+msgid "Today"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:762
+msgid "Now"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:763
+msgid "Close"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:764
+msgid "Featured Image"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:765, includes/prince-settings/includes/admin-functions.php:2409, includes/prince-settings/includes/admin-functions.php:2470
+msgid "Image"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:834
+msgid "Option Tree"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:983
+msgid "General"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:989
+msgid "Sample Text Field Label"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:990
+msgid "Description for the sample text field."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1522
+msgid "Settings could not be saved."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1530
+msgid "Settings Imported."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1534
+msgid "Settings could not be imported."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1541
+msgid "Data Imported."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1545
+msgid "Data could not be imported."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1553
+msgid "Layouts Imported."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1557
+msgid "Layouts could not be imported."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1565
+msgid "Layouts Updated."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1569
+msgid "Layouts could not be updated."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1573
+msgid "Layouts have been deleted."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1579
+msgid "Layout activated."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1618
+msgid "Background"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1619
+msgid "Border"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1620
+msgid "Box Shadow"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1621
+msgid "Category Checkbox"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1622
+msgid "Category Select"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1623
+msgid "Checkbox"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1624
+msgid "Colorpicker"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1625
+msgid "Colorpicker Opacity"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1626
+msgid "CSS"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1627
+msgid "Custom Post Type Checkbox"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1628
+msgid "Custom Post Type Select"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1629
+msgid "Date Picker"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1630
+msgid "Date Time Picker"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1631
+msgid "Dimension"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1632, includes/prince-settings/includes/admin-functions.php:4349
+msgid "Gallery"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1633
+msgid "Google Fonts"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1634
+msgid "JavaScript"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1635
+msgid "Link Color"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1636
+msgid "List Item"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1637
+msgid "Measurement"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1638
+msgid "Numeric Slider"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1639
+msgid "On/Off"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1640
+msgid "Page Checkbox"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1641
+msgid "Page Select"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1642
+msgid "Post Checkbox"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1643
+msgid "Post Select"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1644
+msgid "Radio"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1645
+msgid "Radio Image"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1646
+msgid "Select"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1647
+msgid "Sidebar Select"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1648
+msgid "Slider"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1649
+msgid "Social Links"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1650
+msgid "Spacing"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1651
+msgid "Tab"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1652
+msgid "Tag Checkbox"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1653
+msgid "Tag Select"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1654
+msgid "Taxonomy Checkbox"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1655
+msgid "Taxonomy Select"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1656
+msgid "Text"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1657
+msgid "Textarea"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1658
+msgid "Textarea Simple"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1659
+msgid "Textblock"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1660
+msgid "Textblock Titled"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1661
+msgid "Typography"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:1662
+msgid "Upload"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:2354
+msgid "Left Sidebar"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:2359
+msgid "Right Sidebar"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:2364
+msgid "Full Width (no sidebar)"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:2369
+msgid "Dual Sidebar"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:2374
+msgid "Left Dual Sidebar"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:2379
+msgid "Right Dual Sidebar"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:2420, includes/prince-settings/includes/admin-functions.php:2476, includes/prince-settings/includes/admin-functions.php:4394
+msgid "Link"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:2431, includes/prince-settings/includes/admin-functions.php:2482
+msgid "Description"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:2546
+msgid "Name"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:2547
+msgid "Enter the name/ title that will be shown in the title attribute of the link. %s"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:2556
+msgid "Enter a link to the profile or page on the social website. Remember to add the %s part to the front of the link."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:2936
+msgid "Unable to write to file %s."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3221
+msgid "edit"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3222, includes/prince-settings/includes/admin-functions.php:3290, includes/prince-settings/includes/admin-functions.php:3291, includes/prince-settings/includes/admin-functions.php:3453, includes/prince-settings/includes/admin-functions.php:3454, includes/prince-settings/includes/admin-functions.php:3519, includes/prince-settings/includes/admin-functions.php:3520, includes/prince-settings/includes/admin-functions.php:3613, includes/prince-settings/includes/admin-functions.php:3614, includes/prince-settings/includes/admin-functions.php:3773, includes/prince-settings/includes/admin-functions.php:3774
+msgid "Edit"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3224, includes/prince-settings/includes/admin-functions.php:3225, includes/prince-settings/includes/admin-functions.php:3293, includes/prince-settings/includes/admin-functions.php:3294, includes/prince-settings/includes/admin-functions.php:3456, includes/prince-settings/includes/admin-functions.php:3457, includes/prince-settings/includes/admin-functions.php:3522, includes/prince-settings/includes/admin-functions.php:3523, includes/prince-settings/includes/admin-functions.php:3616, includes/prince-settings/includes/admin-functions.php:3617, includes/prince-settings/includes/admin-functions.php:3776, includes/prince-settings/includes/admin-functions.php:3777
+msgid "Delete"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3231
+msgid "<strong>Section Title</strong>: Displayed as a menu item on the Settings page."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3239
+msgid "<strong>Section ID</strong>: A unique lower case alphanumeric string, underscores allowed."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3300
+msgid "<strong>Label</strong>: Displayed as the label of a form element on the Settings page."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3308, includes/prince-settings/includes/admin-functions.php:3537
+msgid "<strong>ID</strong>: A unique lower case alphanumeric string, underscores allowed."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3316
+msgid "<strong>Type</strong>: Choose one of the available option types from the dropdown."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3327
+msgid "<strong>Description</strong>: Enter a detailed description for the users to read on the Settings page, HTML is allowed. This is also where you enter content for both the Textblock & Textblock Titled option types."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3335
+msgid "<strong>Choices</strong>: This will only affect the following option types: Checkbox, Radio, Select & Done."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3340
+msgid "Add Choice"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3346
+msgid "<strong>Settings</strong>: This will only affect the List Item option type."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3351
+msgid "Add Setting"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3357
+msgid "<strong>Standard</strong>: Setting the standard value for your option only works for some option types. Read the <code>Prince->Documentation</code> for more information on which ones."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3365
+msgid "<strong>Rows</strong>: Enter a numeric value for the number of rows in your textarea. This will only affect the following option types: CSS, Textarea, & Textarea Simple."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3373
+msgid "<strong>Post Type</strong>: Add a comma separated list of post type like 'post,page'. This will only affect the following option types: Custom Post Type Checkbox, & Custom Post Type Select."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3381
+msgid "<strong>Taxonomy</strong>: Add a comma separated list of any registered taxonomy like 'category,post_tag'. This will only affect the following option types: Taxonomy Checkbox, & Taxonomy Select."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3389
+msgid "<strong>Min, Max, & Step</strong>: Add a comma separated list of options in the following format <code>0,100,1</code> (slide from <code>0-100</code> in intervals of <code>1</code>). The three values represent the minimum, maximum, and step options and will only affect the Numeric Slider option type."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3397
+msgid "<strong>CSS Class</strong>: Add and optional class to this option type."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3405
+msgid "<strong>Condition</strong>: Add a comma separated list (no spaces) of conditions in which the field will be visible, leave this setting empty to always show the field. In these examples, <code>value</code> is a placeholder for your condition, which can be in the form of %s."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3413
+msgid "<strong>Operator</strong>: Choose the logical operator to compute the result of the conditions."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3416
+msgid "and"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3417
+msgid "or"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3463
+msgid "Label"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3473
+msgid "Value"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3483
+msgid "Image Source (Radio Image only)"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3529
+msgid "<strong>Title</strong>: Displayed as a contextual help menu item on the Settings page."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3545
+msgid "<strong>Content</strong>: Enter the HTML content about this contextual help item displayed on the Theme Option page for end users to read."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:3581, includes/prince-settings/includes/meta-box-api.php:264, includes/prince-settings/includes/settings-api.php:571
+msgid "Title"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:4403
+msgid "Link URL"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:4410
+msgid "Link Title"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:4445
+msgid "Quote"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:4454
+msgid "Source Name (ex. author, singer, actor)"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:4461
+msgid "Source URL"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:4468
+msgid "Source Title (ex. book, song, movie)"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:4475
+msgid "Source Date"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:4510
+msgid "Video"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:4519
+msgid "Embed video from services like Youtube, Vimeo, or Hulu. You can find a list of supported oEmbed sites in the %1$s. Alternatively, you could use the built-in %2$s shortcode."
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:4519, includes/prince-settings/includes/admin-functions.php:4563
+msgid "Wordpress Codex"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:4554
+msgid "Audio"
+msgstr ""
+
+#: includes/prince-settings/includes/admin-functions.php:4563
+msgid "Embed audio from services like SoundCloud and Rdio. You can find a list of supported oEmbed sites in the %1$s. Alternatively, you could use the built-in %2$s shortcode."
+msgstr ""
+
+#: includes/prince-settings/includes/settings-api.php:335, includes/prince-settings/includes/settings-api.php:335
+msgid "Reset Settings"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:47
+msgid "Sorry, this function does not exist"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:136
+msgid "background-repeat"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:154
+msgid "background-attachment"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:173
+msgid "background-position"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:226
+msgid "background-size"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:240
+msgid "background-image"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:243, includes/prince-settings/includes/settings-types.php:243, includes/prince-settings/includes/settings-types.php:3368, includes/prince-settings/includes/settings-types.php:3368
+msgid "Add Media"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:321, includes/prince-settings/includes/settings-types.php:1076
+msgid "width"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:332, includes/prince-settings/includes/settings-types.php:1096, includes/prince-settings/includes/settings-types.php:1591, includes/prince-settings/includes/settings-types.php:2596
+msgid "unit"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:351
+msgid "style"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:445
+msgid "offset-x"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:454
+msgid "offset-y"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:463
+msgid "blur-radius"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:472
+msgid "spread-radius"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:545, includes/prince-settings/includes/settings-types.php:600
+msgid "No Categories Found"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:595, includes/prince-settings/includes/settings-types.php:896, includes/prince-settings/includes/settings-types.php:1885, includes/prince-settings/includes/settings-types.php:2010, includes/prince-settings/includes/settings-types.php:2739, includes/prince-settings/includes/settings-types.php:2862
+msgid "Choose One"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:837, includes/prince-settings/includes/settings-types.php:902, includes/prince-settings/includes/settings-types.php:1954, includes/prince-settings/includes/settings-types.php:2016
+msgid "No Posts Found"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:1085
+msgid "height"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:1268, includes/prince-settings/includes/settings-types.php:1268, includes/prince-settings/includes/settings-types.php:1311, includes/prince-settings/includes/settings-types.php:1311
+msgid "Remove Google Font"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:1270, includes/prince-settings/includes/settings-types.php:1313
+msgid "-- Choose One --"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:1334, includes/prince-settings/includes/settings-types.php:1334
+msgid "Add Google Font"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:1422
+msgctxt "color picker"
+msgid "Standard"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:1423
+msgctxt "color picker"
+msgid "Hover"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:1424
+msgctxt "color picker"
+msgid "Active"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:1425
+msgctxt "color picker"
+msgid "Visited"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:1426
+msgctxt "color picker"
+msgid "Focus"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:1537, includes/prince-settings/includes/settings-types.php:1537, includes/prince-settings/includes/settings-types.php:2333, includes/prince-settings/includes/settings-types.php:2333, includes/prince-settings/includes/settings-types.php:2500, includes/prince-settings/includes/settings-types.php:2500
+msgid "Add New"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:1540, includes/prince-settings/includes/settings-types.php:2336, includes/prince-settings/includes/settings-types.php:2503
+msgid "You can re-order with drag & drop, the order will update after saving."
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:1716
+msgid "On"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:1740
+msgid "Off"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:1829, includes/prince-settings/includes/settings-types.php:1891
+msgid "No Pages Found"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:2254
+msgid "Choose Sidebar"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:2259
+msgid "No Sidebars"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:2370
+msgid "Facebook"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:2375
+msgid "Twitter"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:2380
+msgid "Google+"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:2385
+msgid "LinkedIn"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:2390
+msgid "Pinterest"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:2395
+msgid "Youtube"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:2400
+msgid "Dribbble"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:2405
+msgid "Github"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:2410
+msgid "Forrst"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:2415
+msgid "Digg"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:2420
+msgid "Delicious"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:2425
+msgid "Tumblr"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:2430
+msgid "Skype"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:2435
+msgid "SoundCloud"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:2440
+msgid "Vimeo"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:2445
+msgid "Flickr"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:2450
+msgid "VK.com"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:2558
+msgid "top"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:2567
+msgid "right"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:2576
+msgid "bottom"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:2585
+msgid "left"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:2689, includes/prince-settings/includes/settings-types.php:2744
+msgid "No Tags Found"
+msgstr ""
+
+#: includes/prince-settings/includes/settings-types.php:2806, includes/prince-settings/includes/settings-types.php:2867
+msgid "No Taxonomies Found"
+msgstr ""
+
+#. translators: %s: Min PHP version
+#: wp-plugin-boilerplate.php:52
+msgid "Unsupported PHP version Min required PHP Version: \"%s\""
+msgstr ""

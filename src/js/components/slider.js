@@ -1,3 +1,3 @@
 export default () => {
-    let a = 0;
+    let a = 71;
 }

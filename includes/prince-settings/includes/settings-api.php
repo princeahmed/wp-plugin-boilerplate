@@ -332,7 +332,7 @@ if ( ! class_exists( 'Settings' ) ) {
 
 							echo '<input type="hidden" name="action" value="reset" />';
 
-							echo '<button type="submit" class="prince-ui-button button button-secondary left reset-settings" title="' . esc_html__( 'Reset Settings', 'wp-radio' ) . '">' . esc_html__( 'Reset Settings', 'wp-radio' ) . '</button>';
+							echo '<button type="submit" class="prince-ui-button button button-secondary left reset-settings" title="' . esc_html__( 'Reset Settings', 'wp-plugin-boilerplate' ) . '">' . esc_html__( 'Reset Settings', 'wp-plugin-boilerplate' ) . '</button>';
 
 							echo '</form>';
 						}
@@ -568,7 +568,7 @@ if ( ! class_exists( 'Settings' ) ) {
 								$required_setting = array(
 									array(
 										'id'        => 'title',
-										'label'     => __( 'Title', 'wp-radio' ),
+										'label'     => __( 'Title', 'wp-plugin-boilerplate' ),
 										'desc'      => '',
 										'std'       => '',
 										'type'      => 'text',

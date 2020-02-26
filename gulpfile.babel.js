@@ -1,15 +1,25 @@
 import gulp from 'gulp';
+import pkg from './package';
 import path from 'path';
 import yargs from 'yargs';
 import sass from 'gulp-sass';
+import autoprefixer from 'gulp-autoprefixer';
 import cleanCss from 'gulp-clean-css';
 import gulpif from 'gulp-if';
 import sourcemaps from 'gulp-sourcemaps';
 import imagemin from 'gulp-imagemin';
 import del from 'del';
 import webpack from 'webpack-stream';
+import named from 'vinyl-named';
+import browserSync from 'browser-sync';
+import zip from 'gulp-zip';
+import replace from 'gulp-replace';
+import rename from 'gulp-rename';
+import checktextdomain from 'gulp-checktextdomain';
+import wpPot from 'gulp-wp-pot';
 
 const PRODUCTION = yargs.argv.prod;
+const server = browserSync.create();
 
 const paths = {
     css: {
@@ -24,31 +34,80 @@ const paths = {
         src: 'src/images/**/*.{jpg,jpeg,png,gif,svg}',
         dest: 'assets/images'
     },
+    php: {
+        src: [
+            '**/*.php',
+            '!apigen/**',
+            '!includes/libraries/**',
+            '!node_modules/**',
+            '!tests/**',
+            '!vendor/**',
+            '!tmp/**'
+        ],
+        dest: './'
+    },
     other: {
         src: ['src/**/*', '!src/{css,js,images}', '!src/{css,js,images}/**/*'],
         dest: 'assets'
+    },
+    build: {
+        src: [
+            '**/*',
+            '!node_modules/**',
+            '!build/**',
+            '!src/**',
+            '!**/*.md',
+            '!**/*.map',
+            '!**/*.sh',
+            '!.idea/**',
+            '!bin/**',
+            '!.git/**',
+            '!gulpfile.babel.js',
+            '!package.json',
+            '!composer.json',
+            '!composer.lock',
+            '!package-lock.json',
+            '!debug.log',
+            '!none',
+            '!.babelrc',
+            '!.gitignore',
+            '!.gitmodules',
+            '!phpcs.xml.dist',
+            '!npm-debug.log',
+            '!plugin-deploy.sh',
+            '!export.sh',
+            '!config.codekit',
+            '!nbproject/*',
+            '!tests/**',
+            '!.csscomb.json',
+            '!.editorconfig',
+            '!.jshintrc',
+            '!.tmp'
+        ],
+        dest: 'build'
     }
 };
 
-export const clean = () => del(['assets']);
+export const clean = () => del(['assets', 'build']);
 
 export const css = () => {
+
     return gulp.src(paths.css.src)
         .pipe(gulpif(!PRODUCTION, sourcemaps.init()))
         .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({cascade: false}))
         .pipe(gulpif(PRODUCTION, cleanCss({compatibility: 'ie8'})))
         .pipe(gulpif(!PRODUCTION, sourcemaps.write()))
-        .pipe(gulp.dest(paths.css.dest));
+        .pipe(gulpif(PRODUCTION, rename(path => path.basename += '.min')))
+        .pipe(gulp.dest(paths.css.dest))
+        .pipe(server.stream());
 };
 
 export const js = () => {
     return gulp.src(paths.js.src)
+        .pipe(named(file => (file.stem + (PRODUCTION ? `.min` : ''))))
         .pipe(webpack({
             mode: PRODUCTION ? 'production' : 'development',
-            entry: {
-                frontend: path.resolve(__dirname, './src/js/frontend.js'),
-                admin: path.resolve(__dirname, './src/js/admin.js')
-            },
             module: {
                 rules: [
                     {
@@ -64,10 +123,7 @@ export const js = () => {
                     }
                 ]
             },
-            output: {
-                path: path.resolve(__dirname, './assets'),
-                filename: `[name]${PRODUCTION ? `.min` : ''}.js`
-            },
+
             devtool: !PRODUCTION ? 'inline-source-map' : false
         }))
         .pipe(gulp.dest(paths.js.dest));
@@ -84,13 +140,69 @@ export const copy = () => {
         .pipe(gulp.dest(paths.other.dest));
 };
 
-export const watch = () => {
-    gulp.watch('src/css/**/*.scss', css);
-    gulp.watch(paths.images.src, images);
-    gulp.watch(paths.other.src, copy);
+export const serve = done => {
+    server.init({
+        proxy: `localhost/${path.resolve(__dirname, '../../../').split(path.sep).pop()}`
+    });
+
+    done();
 };
 
-export const dev = gulp.series(clean, gulp.parallel(css, js, images, copy), watch);
-export const build = gulp.series(clean, gulp.parallel(css, js, images, copy));
+export const reload = done => {
+    server.reload();
+    done();
+};
+
+export const watch = () => {
+    gulp.watch('src/css/**/*.scss', css);
+    gulp.watch('src/js/**/*.js', gulp.series(js, reload));
+    gulp.watch('**/*.php', reload);
+    gulp.watch(paths.images.src, gulp.series(images, reload));
+    gulp.watch(paths.other.src, gulp.series(copy, reload));
+};
+
+export const compress = () => {
+    return gulp.src(paths.build.src)
+        .pipe(replace('__prefix', pkg.name.toLowerCase().replace(/-/g, '_')))
+        .pipe(zip(`${pkg.name}.zip`))
+        .pipe(gulp.dest(paths.build.dest));
+};
+
+export const checkdomain = () => {
+    return gulp.src(paths.php.src)
+        .pipe(checktextdomain({
+            text_domain: pkg.name,
+            keywords: [
+                '__:1,2d',
+                '_e:1,2d',
+                '_x:1,2c,3d',
+                'esc_html__:1,2d',
+                'esc_html_e:1,2d',
+                'esc_html_x:1,2c,3d',
+                'esc_attr__:1,2d',
+                'esc_attr_e:1,2d',
+                'esc_attr_x:1,2c,3d',
+                '_ex:1,2c,3d',
+                '_n:1,2,4d',
+                '_nx:1,2,4c,5d',
+                '_n_noop:1,2,3d',
+                '_nx_noop:1,2,3c,4d'
+            ],
+            report_success: true,
+            correct_domain: true
+        }))
+};
+
+export const makepot = () => {
+    return gulp.src(paths.php.src)
+        .pipe(wpPot({
+            domain: pkg.name,
+            package: pkg.name
+        }))
+        .pipe(gulp.dest(`languages/${pkg.name}.pot`))
+};
+
+export const dev = gulp.series(clean, gulp.parallel(css, js, images, copy), serve, watch);
+export const build = gulp.series(clean, gulp.parallel(css, js, images, copy), checkdomain, makepot, compress);
 
 export default dev;

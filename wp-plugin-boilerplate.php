@@ -49,7 +49,7 @@ final class WP_Plugin_Boilerplate {
 
 			$notice = sprintf(
 			/* translators: %s: Min PHP version */
-				esc_html__( 'Unsupported PHP version Min required PHP Version: "%s"', 'wp-radio-updater' ),
+				esc_html__( 'Unsupported PHP version Min required PHP Version: "%s"', 'wp-plugin-boilerplate' ),
 				$this->min_php
 			);
 		}
