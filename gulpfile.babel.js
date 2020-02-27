@@ -98,14 +98,15 @@ export const css = () => {
         .pipe(autoprefixer({cascade: false}))
         .pipe(gulpif(PRODUCTION, cleanCss({compatibility: 'ie8'})))
         .pipe(gulpif(!PRODUCTION, sourcemaps.write()))
-        .pipe(gulpif(PRODUCTION, rename(path => path.basename += '.min')))
+        //.pipe(gulpif(PRODUCTION, rename(path => path.basename += '.min')))
         .pipe(gulp.dest(paths.css.dest))
         .pipe(server.stream());
 };
 
 export const js = () => {
     return gulp.src(paths.js.src)
-        .pipe(named(file => (file.stem + (PRODUCTION ? `.min` : ''))))
+    //.pipe(named(file => (file.stem + (PRODUCTION ? `.min` : ''))))
+        .pipe(named())
         .pipe(webpack({
             mode: PRODUCTION ? 'production' : 'development',
             module: {
